@@ -23,7 +23,18 @@ public class Student {
     }
 
     public void print() {
+        int average = getAverage();
         System.out.println(name + "\t" + english + "\t" + math
-                + "\t" + ((english + math) / 2));
+                + "\t" + getAverage() + "\t" +
+                ((average >= 60) ? "PASS" : "FAILED"));
+       /* if (getAverage() >= 60) {
+            System.out.println("\tPASS");
+        } else {
+            System.out.println("\tFAILED");
+        }*/
+    }
+
+    public int getAverage() {
+        return (english + math) / 2;
     }
 }
