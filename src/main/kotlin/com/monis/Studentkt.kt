@@ -4,14 +4,14 @@ import java.util.*
 
 fun main() {
 //    userInput()
-    val studentkt = Studentkt("monis", 87, 99)
+    val studentkt = Studentkt("monis", 17, 99)
     studentkt.print()
-    println("High score: ${studentkt.highest()}")
 }
 
 class Studentkt(var name: String, var english: Int, var math: Int) {
     fun print() {
         println("$name\t$english\t$math\t${getAverage()}\t${passOrFailed()}\t${grading()}")
+        println("High score:\t${highest()}")
     }
 
     fun passOrFailed() = if (getAverage() >= 60) "PASS" else "FAILED"
