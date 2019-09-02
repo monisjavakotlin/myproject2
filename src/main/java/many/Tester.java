@@ -1,12 +1,41 @@
 package many;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Tester {
     public static void main(String[] args) {
 //        arrayTest();
+//        list();
+//        set();
+        map();
+    }
+
+    private static void map() {
+        HashMap<String, String> stocks = new HashMap<>();
+        stocks.put("2330", "TSMC");
+        stocks.put("2317", "HONHAI");
+        System.out.println(stocks.get("2330"));
+        System.out.println(stocks);
+        System.out.println();
+        for (String key : stocks.keySet()) {
+            System.out.println(stocks.get(key));
+        }
+    }
+
+    private static void set() {
+        HashSet<Integer> set = new HashSet<>();
+        set.add(6);
+        set.add(8);
+        set.add(1);
+        set.add(4);
+        set.add(8);
+        System.out.println(set);
+        for (int n : set) {
+            System.out.println(n);
+        }
+    }
+
+    private static void list() {
         ArrayList list = new ArrayList<>();
         list.add(5);
         list.add(3);
@@ -25,7 +54,7 @@ public class Tester {
         System.out.println();
 
         List<Integer> scores = Arrays.asList(32, 6, 61, 758, 23, 32);
-        for (int score:scores) {
+        for (int score : scores) {
             System.out.println(score);
         }
     }
