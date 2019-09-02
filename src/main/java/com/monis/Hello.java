@@ -10,7 +10,7 @@ public class Hello {
         person.height = 1.7f;*/
         System.out.println(person.bmi());
 
-      /*  //基本資料型態
+      /*  //basic data type
         int age = 19;
         char c = 'A';
         byte b = 120;
@@ -18,7 +18,7 @@ public class Hello {
         double height = 1.7;
         boolean adult = true;
         boolean enroll = false;
-        //參照資料型態 - wrapper class
+        //reference data type - wrapper class
         Integer age2 = 29;
         Character c2 = 'B';
         String name = "Monis";*/

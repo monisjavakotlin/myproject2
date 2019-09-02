@@ -15,9 +15,9 @@ public class GameFor {
         System.out.println(secret);
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i <= 5; i++) {
-            System.out.println("請輸入一個數字(" + i + "/4): ");
+            System.out.println("Pls enter a number(" + i + "/4): ");
             int number = scanner.nextInt();
-            System.out.println("第" + i + "次" + number);
+            System.out.println("No." + i + ": " + number);
             if (number < secret) {
                 System.out.println("higher");
             } else if (number > secret) {
@@ -27,6 +27,7 @@ public class GameFor {
                 break;
             }
         }
-        System.out.println("結束");
+        System.out.println();
+        System.out.println("End");
     }
 }

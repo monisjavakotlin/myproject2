@@ -56,7 +56,7 @@ public class Student {
         } else if (average >= 60 && average <= 69) {
             grading = 'D';
         }*/
-        System.out.println("等級 = " + grading);
+        System.out.println("Level = " + grading);
        /* if (getAverage() >= 60) {
             System.out.println("\tPASS");
         } else {
